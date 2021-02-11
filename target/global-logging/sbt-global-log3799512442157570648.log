@@ -1,0 +1,17 @@
+[debug] > Exec(test, None, None)
+[debug] Evaluating tasks: Test / test
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\target\scala-2.13\test-classes ...
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:38:7: not found: value allEqual
+[error]       allEqual(List("a", "a", "a", "a")) shouldBe true
+[error]       ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:42:7: not found: value allEqual
+[error]       allEqual(List("a")) shouldBe true
+[error]       ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:46:7: not found: value allEqual
+[error]       allEqual(List("a", "a", "b", "a")) shouldBe false
+[error]       ^
+[error] three errors found
+[error] (Test / compileIncremental) Compilation failed
+[error] Total time: 2 s, completed 10 февр. 2021 г., 23:17:15
+[debug] > Exec(idea-shell, None, None)

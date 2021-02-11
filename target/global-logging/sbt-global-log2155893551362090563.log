@@ -1,0 +1,76 @@
+[debug] > Exec(test, None, None)
+[debug] Evaluating tasks: Test / test
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\target\scala-2.13\test-classes ...
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:2:24: object FlatSpec is not a member of package org.scalatest
+[error] note: class FlatSpec exists, but it has no companion object.
+[error]   import org.scalatest.FlatSpec.AnyFlatSpec
+[error]                        ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:3:33: object should is not a member of package org.scalatest.matchers
+[error]   import org.scalatest.matchers.should.Matchers._
+[error]                                 ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:6:30: not found: type AnyFlatSpec
+[error]   class HomeworkTest extends AnyFlatSpec with ScalaCheckDrivenPropertyChecks {
+[error]                              ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:7:25: value should is not a member of String
+[error]     "allSubSetsOfSizeN" should "work correctly on 2 from Set(1, 2, 3)" in {
+[error]                         ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:8:42: value shouldEqual is not a member of Set[Set[Int]]
+[error]       allSubsetsOfSizeN(Set(1, 2, 3), 2) shouldEqual Set(Set(1, 2), Set(2, 3), Set(1, 3))
+[error]                                          ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:11:5: not found: value it
+[error]     it should "work correctly" in {
+[error]     ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:21:23: value shouldEqual is not a member of Int
+[error]         obtained.size shouldEqual expectedSize.toLong
+[error]                       ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:22:38: value shouldEqual is not a member of Boolean
+[error]         obtained.forall(_.size == k) shouldEqual true
+[error]                                      ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:26:26: value should is not a member of String
+[error]     "totalVegetableCost" should "be correct" in {
+[error]                          ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:27:26: value shouldEqual is not a member of Int
+[error]       totalVegetableCost shouldEqual 5012
+[error]                          ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:30:29: value should is not a member of String
+[error]     "totalVegetableWeights" should "be correct" in {
+[error]                             ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:31:29: value shouldEqual is not a member of Map[String,Int]
+[error]       totalVegetableWeights shouldEqual Map(
+[error]                             ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:37:16: value should is not a member of String
+[error]     "allEqual" should "work for lists which are all equal" in {
+[error]                ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:38:7: not found: value allEqual
+[error]       allEqual(List("a", "a", "a", "a")) shouldBe true
+[error]       ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:41:16: value should is not a member of String
+[error]     "allEqual" should "work on 1 element list" in {
+[error]                ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:42:7: not found: value allEqual
+[error]       allEqual(List("a")) shouldBe true
+[error]       ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:45:16: value should is not a member of String
+[error]     "allEqual" should "work for lists which are NOT all equal" in {
+[error]                ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:46:7: not found: value allEqual
+[error]       allEqual(List("a", "a", "b", "a")) shouldBe false
+[error]       ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:49:37: value should is not a member of String
+[error]     "sort considering equal values" should "be correct on example 1" in {
+[error]                                     ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:53:16: value shouldEqual is not a member of Seq[(Set[String], Int)]
+[error]       obtained shouldEqual expected
+[error]                ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:56:5: not found: value it
+[error]     it should "be correct on example 2" in {
+[error]     ^
+[error] C:\ScalaBootCamp\Homework\ClearProject\FourthHomework\src\test\scala\HomeworkTest.scala:61:42: value shouldEqual is not a member of Seq[(Set[String], Int)]
+[error]       sortConsideringEqualValues(values) shouldEqual List(
+[error]                                          ^
+[error] 22 errors found
+[debug] Forcing garbage collection...
+[error] (Test / compileIncremental) Compilation failed
+[error] Total time: 2 s, completed 10 февр. 2021 г., 23:14:59
+[debug] > Exec(idea-shell, None, None)
